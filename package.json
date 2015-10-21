@@ -1,0 +1,23 @@
+{
+  "name": "sizmek2htmlflash",
+  "version": "1.0.0",
+  "description": "Npm modele that execute Grunt task to implement Sizmek clicktag code into HTML banner made with Flash CC",
+  "license": "MIT",
+  "repository": "zguillez/sizmek2htmlflash",
+  "author": {
+    "name": "Guillermo de la Iglesia",
+    "email": "mail@zguillez.io",
+    "url": "https://github.com/zguillez"
+  },
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "devDependencies": {
+    "grunt": "^0.4.5",
+    "grunt-contrib-copy": "^0.8.2",
+    "grunt-mkdir": "^0.1.2",
+    "grunt-rename": "^0.1.4",
+    "grunt-text-replace": "^0.4.0"
+  }
+}
