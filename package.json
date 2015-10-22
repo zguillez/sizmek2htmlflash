@@ -14,7 +14,7 @@
 		"sizmek2htmlflash": "./bin/sizmek2htmlflash.js"
 	},
 	"scripts": {
-		"install": "node lib/install.js"
+		"install": "node lib/install.js",
 		"postinstall": "npm install"
 	},
 	"dependencies": {
