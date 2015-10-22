@@ -126,6 +126,9 @@ Code:
 	function wait() {
 		checkInit();
 	}
+	function handleBannerClick(){
+		EB.clickthrough();
+	}
 	
 * Change the **onload** action:
 
@@ -134,10 +137,6 @@ Code:
 * Add the **onclick** function for Sizmek clicktag:
 
 `onclick="handleBannerClick()"`
-
-	function handleBannerClick(){
-		EB.clickthrough();
-	}
 
 * Move the image files to root folder.
 
@@ -204,11 +203,16 @@ Code:
 	<meta charset="UTF-8">
 	<title>300x250</title>
 	
+	<style>html,body{margin:0;padding:0}</style>
+	
+	<script src="http://ds.serving-sys.com/BurstingScript/EBLoader.js"></script>
 	<script src="http://code.createjs.com/easeljs-0.8.1.min.js"></script>
 	<script src="http://code.createjs.com/tweenjs-0.6.1.min.js"></script>
 	<script src="http://code.createjs.com/movieclip-0.8.1.min.js"></script>
 	<script src="http://code.createjs.com/preloadjs-0.6.1.min.js"></script>
 	<script src="300x250.js"></script>
+	
+	<style>html, body {margin:0,padding:0}</style>
 	
 	<script>
 	var canvas, stage, exportRoot;
@@ -217,21 +221,7 @@ Code:
 		canvas = document.getElementById("canvas");
 		images = images||{};
 		ss = ss||{};
-	
-		var loader = new createjs.LoadQueue(false);
-		loader.addEventListener("fileload", handleFileLoad);
-		loader.addEventListener("complete", handleComplete);
-	loader.loadFile({src:"images/300x250_atlas_.json", type:"spritesheet", id:"300x250_atlas_"}, true);
-		loader.loadManifest(lib.properties.manifest);
-	}
-	
-	function handleFileLoad(evt) {
-		if (evt.item.type == "image") { images[evt.item.id] = evt.result; }
-	}
-	
-	function handleComplete(evt) {
-		var queue = evt.target;
-		ss["300x250_atlas_"] = queue.getResult("300x250_atlas_");
+		ss["300x250_atlas_"] = new createjs.SpriteSheet({"images": ["300x250.png"], "frames": [[182,177,80,204],[0,354,50,50],[182,0,180,175],[0,0,180,175],[0,177,180,175]]});
 		exportRoot = new lib._300x250();
 	
 		stage = new createjs.Stage(canvas);
@@ -241,17 +231,33 @@ Code:
 		createjs.Ticker.setFPS(lib.properties.fps);
 		createjs.Ticker.addEventListener("tick", stage);
 	}
+	function checkInit() {
+		if (!EB.isInitialized()) {
+			EB.addEventListener(EBG.EventName.EB_INITIALIZED, wait);
+		} else {
+			onInit();
+		}
+	}
+	function onInit() {
+		init();
+	}
+	function wait() {
+		checkInit();
+	}
+	function handleBannerClick(){
+		EB.clickthrough();
+	}
 	</script>
 	</head>
 	
-	<body onload="init();" style="background-color:#D4D4D4">
-		<canvas id="canvas" width="550" height="400" style="background-color:#FFFFFF"></canvas>
+	<body onload="checkInit()" style="background-color:#D4D4D4">
+		<canvas id="canvas" width="550" height="400" style="background-color:#FFFFFF" onclick="handleBannerClick()"></canvas>
 	</body>
 	</html>
 
 # Changelog
 
-### v1.1.5 (October 22, 2015) 
+### v1.1.6 (October 22, 2015) 
 
 * Folder implementation
 * PNG optimize
