@@ -1,6 +1,6 @@
 # Sizmek2htmlflash
 
-Npm modele that execute Grunt task to implement Sizmek clicktag code into HTML banner made with Flash CC 2015
+Npm module that execute Grunt task to implement Sizmek clicktag code into HTML banner made with Flash CC 2015
 
 # Getting Started
 
@@ -93,7 +93,7 @@ This task will crreate a **banner_300x250** folder with the banners files. And c
 
 * And script tag from Sizmek api:
 
-`\<script src="http://ds.serving-sys.com/BurstingScript/EBLoader.js"></script>`
+`<script src="http://ds.serving-sys.com/BurstingScript/EBLoader.js"></script>`
 
 * And css inline:
 
