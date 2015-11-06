@@ -246,11 +246,11 @@ Code:
 	
 	<style>html,body{margin:0;padding:0}</style>
 	
-	<script src="http://ds.serving-sys.com/BurstingScript/EBLoader.js"></script>
-	<script src="http://code.createjs.com/easeljs-0.8.1.min.js"></script>
-	<script src="http://code.createjs.com/tweenjs-0.6.1.min.js"></script>
-	<script src="http://code.createjs.com/movieclip-0.8.1.min.js"></script>
-	<script src="http://code.createjs.com/preloadjs-0.6.1.min.js"></script>
+	<script src="lib/EBLoader.js"></script>
+	<script src="lib/easeljs.js"></script>
+	<script src="lib/tweenjs.js"></script>
+	<script src="lib/movieclip.js"></script>
+	<script src="lib/preloadjs.js"></script>
 	<script src="300x250.js"></script>
 	
 	<style>html, body {margin:0,padding:0}</style>
