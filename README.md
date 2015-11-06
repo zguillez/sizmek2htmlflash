@@ -134,7 +134,7 @@ PATH
 					
 * And script tag for libs:
 
-`<script src="http://ds.serving-sys.com/BurstingScript/EBLoader.js"></script>`
+`<script src="lib/EBLoader.js"></script>`
 
 * And css inline:
 
