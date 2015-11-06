@@ -8,7 +8,7 @@ Npm module that execute Grunt task to implement Sizmek clicktag code into HTML b
 
 	npm install sizmek2htmlflash
 	
-## Install dependences
+## Install dependences manually
 
 	npm install
 
@@ -87,11 +87,52 @@ This task will crreate a **banner_300x250** folder with the banners files. And c
 				300x250.js
 				300x250.png
 				300x250.png
+				lib/
+					EBLoader.js
+					easeljs.js
+					movieclip.js
+					preloadjs.js
+					tweenjs.js
 			banner_300x250.zip
-			
+
+# CreateJS liberies
+
+Adobe Flash CC use CreateJS javascript lib for animations. This script assumes that versions of the libreries are 0.8.1 and 0.6.1
+
+	<script src="http://code.createjs.com/easeljs-0.8.1.min.js"></script>
+	<script src="http://code.createjs.com/tweenjs-0.6.1.min.js"></script>
+	<script src="http://code.createjs.com/movieclip-0.8.1.min.js"></script>
+	<script src="http://code.createjs.com/preloadjs-0.6.1.min.js"></script>
+	
+If different versions are used you will edit the file Gruntfile.js for update it:
+
+	var easeljs = '0.8.1';
+	var tweenjs = '0.6.1';
+	var movieclip = '0.8.1';
+	var preloadjs = '0.6.1';
+	
 # Tasks processed
 
-* And script tag from Sizmek api:
+* Download Sizmek and CreateJS libraries:
+	
+URLS
+
+	http://ds.serving-sys.com/BurstingScript/EBLoader.js
+	http://code.createjs.com/easeljs-0.8.1.min.js
+	http://code.createjs.com/tweenjs-0.6.1.min.js
+	http://code.createjs.com/movieclip-0.8.1.min.js
+	http://code.createjs.com/preloadjs-0.6.1.min.js
+
+PATH
+
+	lib/
+		EBLoader.js
+		easeljs.js
+		movieclip.js
+		preloadjs.js
+		tweenjs.js
+					
+* And script tag for libs:
 
 `<script src="http://ds.serving-sys.com/BurstingScript/EBLoader.js"></script>`
 
@@ -256,6 +297,11 @@ Code:
 	</html>
 
 # Changelog
+
+### v1.2.0 (November 6, 2015) 
+
+* Sizmek lib EBLoader on relative path
+* CreateJS libs on relative paths
 
 ### v1.1.6 (October 22, 2015) 
 

@@ -1,6 +1,6 @@
 {
 	"name": "sizmek2htmlflash",
-	"version": "1.1.6",
+	"version": "1.2.1",
 	"description": "Npm modele that execute Grunt task to implement Sizmek clicktag code into HTML banner made with Flash CC",
 	"license": "MIT",
 	"repository": {
@@ -13,9 +13,6 @@
 		"url": "https://github.com/zguillez"
 	},
 	"main": "./lib/sizmek2htmlflash.js",
-	"bin": {
-		"sizmek2htmlflash": "./bin/sizmek2htmlflash.js"
-	},
 	"scripts": {
 		"install": "node lib/install.js"
 	},
@@ -29,7 +26,8 @@
 		"grunt-contrib-imagemin": "^0.9.4",
 		"grunt-pngmin": "^1.0.2",
 		"imagemin-mozjpeg": "^5.1.0",
-		"grunt-zip": "^0.17.1"
+		"grunt-zip": "^0.17.1",
+		"grunt-curl": "^2.2.0"
 	},
 	"engines": {
 		"node": "*"
