@@ -4,19 +4,13 @@ Npm module that execute Grunt task to implement Sizmek clicktag code into HTML b
 
 # Getting Started
 
-### Install component
+### Install component globally
 
-	npm install sizmek2htmlflash
+	npm i -g sizmek2htmlflash
 	
-## Install dependences manually
+## Execute command
 
-	npm install
-
-If you have error on install try to update dependences manually:
-
-```bash
-sudo npm install
-```
+	sizmek2htmlflash -v
 
 ## Requeriments
 
@@ -65,11 +59,11 @@ Publish the flash banner on html5 format. The export files must be like this:
 
 Run the grunt task **run**, with the param of the **folder** and **file** name of the banner:
 
-	grunt run:300x250
+	sizmek2htmlflash run:300x250
 	
 If the folder and file name are different, must pass two parameters:
 
-	grunt run:300x250folder:300x250fla
+	sizmek2htmlflash run:300x250folder:300x250fla
 	
 This task will crreate a **banner_300x250** folder with the banners files. And create a **banner_300x250.zip** file for upload to Sizmek platform:
 
@@ -297,6 +291,10 @@ Code:
 	</html>
 
 # Changelog
+
+### v1.3.0 (November 18, 2015) 
+
+* Make global shell command
 
 ### v1.2.0 (November 6, 2015) 
 
