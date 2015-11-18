@@ -160,7 +160,7 @@ module.exports = function(grunt) {
 				files: [{
 					expand: true,
 					cwd: '???/banner_???/',
-					src: ['**/*.jpg'],
+					src: '.jpg',
 					dest: '???/banner_???/'
 				}]
 			}
@@ -174,7 +174,7 @@ module.exports = function(grunt) {
 				files: [{
 					expand: true,
 					cwd: '???/banner_???/',
-					src: ['**/*.png'],
+					src: '.png',
 					dest: '???/banner_???/'
 				}]
 			}
@@ -200,6 +200,7 @@ module.exports = function(grunt) {
 		if (!filename) {
 			filename = folder;
 		}
+		folder = process.env['PWD'] + '/' + folder;
 		var json = grunt.file.read(folder + '/' + 'images/' + filename + '_atlas_.json');
 		json = json.replace('images/', '');
 		json = json.replace('_atlas_', '');
@@ -240,6 +241,11 @@ module.exports = function(grunt) {
 		grunt.task.run('curl');
 		grunt.task.run('rename');
 		grunt.task.run('replace');
+		console.log(folder + '/banner_' + filename + '/');
+		console.log(folder + '/banner_' + filename + '/');
+		console.log(folder + '/banner_' + filename + '/');
+		console.log(folder + '/banner_' + filename + '/');
+		console.log(folder + '/banner_' + filename + '/');
 		grunt.task.run('imagemin');
 		grunt.task.run('pngmin');
 		grunt.task.run('zip');
