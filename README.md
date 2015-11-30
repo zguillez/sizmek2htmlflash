@@ -294,7 +294,7 @@ Code:
 
 Banner polite HTML5 with a video frame
 
-##Useage
+## Useage
 
 Add a video and poster file on root folder
 
