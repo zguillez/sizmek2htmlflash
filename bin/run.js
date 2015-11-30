@@ -11,8 +11,14 @@ if (param === 'version' || param === '-v') {
 } else if (param === 'run') {
 	var dir = path.resolve(__dirname, '../');
 	var folder = process.argv[3];
+	var options = '';
+	process.argv.forEach(function(val, index, array) {
+		if (index > 3) {
+			options += " " + val;
+		}
+	});
 	if (folder) {
-		shell.exec('grunt run:' + folder + ' --gruntfile ' + dir + '/Gruntfile.js');
+		shell.exec('grunt run:' + folder + ' --gruntfile ' + dir + '/Gruntfile.js' + " " + options);
 	} else {
 		console.log('ERR: No folder');
 	}

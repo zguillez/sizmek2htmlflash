@@ -290,7 +290,160 @@ Code:
 	</body>
 	</html>
 
+# Banner with video
+
+Banner polite HTML5 with a video frame
+
+##Useage
+
+Add a video and poster file on root folder
+
+	banners/
+    300x600/
+        ...
+        video.jpg
+        video.mp4
+
+Execute command with "video" optión
+
+	sizmek2htmlflash run 300x600 --video='0,330'
+	
+This will place the video on top 0px and left 330px absolut position.
+
+## File created:
+
+	<!DOCTYPE html>
+	<html>
+	<head>
+	<meta charset="UTF-8">
+	<title>300x600</title>
+	
+	<script>EBModulesToLoad = ["Video", "EBCMD"];</script>
+	<script src="lib/EBLoader.js"></script>
+	<script src="lib/easeljs.js"></script>
+	<script src="lib/tweenjs.js"></script>
+	<script src="lib/movieclip.js"></script>
+	<script src="lib/preloadjs.js"></script>
+	<script src="300x600.js"></script>
+	
+	<style>
+		html,body{position: relative;margin:0;padding:0;}
+		#banner {position: relative; display:inline-block;}
+		.video-container {position: absolute; top: 330px; left:0px;}
+	</style>
+	
+	<script>
+	var canvas, stage, exportRoot;
+	
+	function init() {
+		canvas = document.getElementById("canvas");
+		images = images||{};
+		ss = ss||{};
+		ss["300x600_atlas_"] = new createjs.SpriteSheet({"images": ["300x600.png"], "frames": [[0,0,300,600],[0,640,134,35],[141,602,102,36],[136,640,118,36],[0,677,40,36],[245,602,96,36],[0,602,139,36]]});
+		exportRoot = new lib._300x600();
+	
+		stage = new createjs.Stage(canvas);
+		stage.addChild(exportRoot);
+		stage.update();
+	
+		createjs.Ticker.setFPS(lib.properties.fps);
+		createjs.Ticker.addEventListener("tick", stage);
+	}
+	function checkInit() {
+		if (!EB.isInitialized()) {
+			EB.addEventListener(EBG.EventName.EB_INITIALIZED, wait);
+		} else {
+			onInit();
+		}
+	}
+	function onInit() {
+		initVideo();
+		init();
+	}
+	function wait() {
+		checkInit();
+	}
+	function handleBannerClick(){
+		EB.clickthrough();
+	}
+	
+	var adDiv;
+	var videoContainer;
+	var video;
+	var sdkVideoPlayer;
+	var sdkVideoPlayButton;
+	var isIOS = (/iPhone|iPad|iPod/i).test(navigator.userAgent);
+	
+	function initVideo() {
+		adDiv = document.getElementById("ad");
+		videoContainer = document.getElementById("video-container");
+		video = document.getElementById("video");
+		sdkVideoPlayer = document.getElementById("sdk-video-player");
+		sdkVideoPlayButton = document.getElementById("sdk-video-play-button");
+		var sdkData = EB.getSDKData();
+		var useSDKVideoPlayer = false;
+		var sdkPlayerVideoFormat = "mp4";
+		if (sdkData !== null) {
+			if (sdkData.SDKType === "MRAID" && sdkData.version > 1) {
+				document.body.classList.add("sdk");
+				EB.setExpandProperties({
+					useCustomClose: true
+				});
+				var sourceTags = video.getElementsByTagName("source");
+				var videoSource = "";
+				for (var i = 0; i < sourceTags.length; i++) {
+					if (sourceTags[i].getAttribute("type")) {
+						if (sourceTags[i].getAttribute("type").toLowerCase() === "video/" + sdkPlayerVideoFormat) {
+							videoSource = sourceTags[i].getAttribute("src");
+						}
+					}
+				}
+				videoContainer.removeChild(video);
+				video = null;
+				sdkVideoPlayButton.addEventListener("click", function() {
+					if (videoSource !== "") {
+						EB.playVideoOnNativePlayer(videoSource);
+					}
+				});
+				useSDKVideoPlayer = true;
+			}
+		}
+		if (!useSDKVideoPlayer) {
+			videoContainer.removeChild(sdkVideoPlayer);
+			var videoTrackingModule = new EBG.VideoModule(video);
+		}
+		videoContainer.style.visibility = "visible";
+		if (isIOS) {
+			centerWebkitVideoControls();
+		}
+	}
+	
+	function centerWebkitVideoControls() {
+		document.body.classList.add("ios-center-video-controls");
+	}
+	</script>
+	</head>
+	
+	<body onload="checkInit()" style="background-color:#D4D4D4">
+		<div id="banner">
+			<canvas id="canvas" width="300" height="600" style="background-color:#FFFFFF" onclick="handleBannerClick()"></canvas>
+			<div id="video-container" class="video-container centered">
+				<video id="video" controls loop autoplay muted poster="video.jpg">
+					<source src="video.mp4" type="video/mp4">
+				</video>
+				<div id="sdk-video-player" class="sdk-video-player">
+					<div id="sdk-video-play-button" class="sdk-video-player-button centered"></div>
+				</div>
+			</div>
+		</div>
+	</body>
+	</html>
+
 # Changelog
+
+### v1.4.0 (November 30, 2015) 
+
+* Add banner with video (Polite HTML)
 
 ### v1.3.0 (November 18, 2015) 
 
