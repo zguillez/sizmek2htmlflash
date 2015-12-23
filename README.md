@@ -1,10 +1,10 @@
 # Sizmek2htmlflash
 
-[![npm version](https://badge.fury.io/js/generator-sizmek2htmlflash.svg)](https://badge.fury.io/js/generator-sizmek2htmlflash)
-[![Code Climate](http://img.shields.io/codeclimate/github/zguillez/generator-sizmek2htmlflash.svg)](https://codeclimate.com/github/zguillez/generator-sizmek2htmlflash)
-[![Build Status](http://img.shields.io/travis/zguillez/generator-sizmek2htmlflash.svg)](https://travis-ci.org/zguillez/generator-sizmek2htmlflash)
-[![Coverage Status](http://img.shields.io/coveralls/zguillez/generator-sizmek2htmlflash.svg)](https://coveralls.io/r/zguillez/generator-sizmek2htmlflash)
-![](https://reposs.herokuapp.com/?path=zguillez/generator-sizmek2htmlflash)
+[![npm version](https://badge.fury.io/js/sizmek2htmlflash.svg)](https://badge.fury.io/js/sizmek2htmlflash)
+[![Code Climate](http://img.shields.io/codeclimate/github/zguillez/sizmek2htmlflash.svg)](https://codeclimate.com/github/zguillez/sizmek2htmlflash)
+[![Build Status](http://img.shields.io/travis/zguillez/sizmek2htmlflash.svg)](https://travis-ci.org/zguillez/sizmek2htmlflash)
+[![Coverage Status](http://img.shields.io/coveralls/zguillez/sizmek2htmlflash.svg)](https://coveralls.io/r/zguillez/sizmek2htmlflash)
+![](https://reposs.herokuapp.com/?path=zguillez/sizmek2htmlflash)
 [![License](http://img.shields.io/:license-mit-blue.svg)](http://doge.mit-license.org)
 
 Npm module that execute Grunt task to implement Sizmek clicktag code into HTML banner made with Flash CC 2015
