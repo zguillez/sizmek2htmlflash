@@ -1,9 +1,9 @@
 # Sizmek2htmlflash
 
 [![npm version](https://badge.fury.io/js/sizmek2htmlflash.svg)](https://badge.fury.io/js/sizmek2htmlflash)
+[![Build Status](http://img.shields.io/travis/zguillez/sizmek2htmlflash.svg)](https://github.com/zguillez/sizmek2htmlflash)
 [![Code Climate](http://img.shields.io/codeclimate/github/zguillez/sizmek2htmlflash.svg)](https://codeclimate.com/github/zguillez/sizmek2htmlflash)
 [![Dependency Status](https://gemnasium.com/zguillez/sizmek2htmlflash.svg)](https://gemnasium.com/zguillez/sizmek2htmlflash)
-[![Build Status](http://img.shields.io/travis/zguillez/sizmek2htmlflash.svg)](https://github.com/zguillez/sizmek2htmlflash)
 [![Installs](https://img.shields.io/npm/dt/sizmek2htmlflash.svg)](https://coveralls.io/r/zguillez/sizmek2htmlflash)
 ![](https://reposs.herokuapp.com/?path=zguillez/sizmek2htmlflash)
 [![License](http://img.shields.io/:license-mit-blue.svg)](http://doge.mit-license.org)
