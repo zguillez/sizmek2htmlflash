@@ -37,7 +37,7 @@ For update npm
 
 Develop banners on separate forlders:
 
-	baners/
+	banners/
 		300x250/
 		250x250/
 		728x90/
@@ -45,7 +45,7 @@ Develop banners on separate forlders:
 
 Install module on banners root folder:
 
-	baners/
+	banners/
 		300x250/
 		250x250/
 		728x90/
@@ -72,7 +72,7 @@ Run the grunt task **run**, with the param of the **folder** and **file** name o
 	
 If the folder and file name are different, must pass two parameters:
 
-	sizmek2htmlflash run:300x250folder:300x250fla
+	sizmek2htmlflash run:folderName:flaFileName
 	
 This task will crreate a **banner_300x250** folder with the banners files. And create a **banner_300x250.zip** file for upload to Sizmek platform:
 
@@ -98,7 +98,7 @@ This task will crreate a **banner_300x250** folder with the banners files. And c
 					tweenjs.js
 			banner_300x250.zip
 
-# CreateJS liberies
+# CreateJS libreries
 
 Adobe Flash CC use CreateJS javascript lib for animations. This script assumes that versions of the libreries are 0.8.1 and 0.6.1
 
@@ -447,6 +447,16 @@ This will place the video on top 0px and left 330px absolut position.
 		</div>
 	</body>
 	</html>
+
+# Contributing and issues
+
+Contributors are welcome, please fork and send pull requests! If you have any ideas on how to make this project better then please submit an issue or send me an [email](mailto:mail@zguillez.io).
+
+# License
+
+©2015 Zguillez.io
+
+Original code licensed under [MIT](https://en.wikipedia.org/wiki/MIT_License) Open Source projects used within this project retain their original licenses.
 
 # Changelog
 
