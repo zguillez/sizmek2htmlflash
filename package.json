@@ -1,6 +1,6 @@
 {
   "name": "sizmek2htmlflash",
-  "version": "1.4.1",
+  "version": "1.4.2",
   "description": "Npm module that execute Grunt task to implement Sizmek clicktag code into HTML banner made with Flash CC",
   "repository": "https://github.com/zguillez/sizmek2htmlflash",
   "license": "MIT",
