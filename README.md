@@ -43,17 +43,6 @@ Develop banners on separate forlders:
 		728x90/
 		etc..
 
-Install module on banners root folder:
-
-	banners/
-		300x250/
-		250x250/
-		728x90/
-		etc..
-		Gruntfile.js //created by module
-		node_modules/
-		package.json
-
 Publish the flash banner on html5 format. The export files must be like this:
 
 	banners/
@@ -68,11 +57,11 @@ Publish the flash banner on html5 format. The export files must be like this:
 
 Run the grunt task **run**, with the param of the **folder** and **file** name of the banner:
 
-	sizmek2htmlflash run:300x250
+	sizmek2htmlflash run 300x250
 	
 If the folder and file name are different, must pass two parameters:
 
-	sizmek2htmlflash run:folderName:flaFileName
+	sizmek2htmlflash run folderName flaFileName
 	
 This task will crreate a **banner_300x250** folder with the banners files. And create a **banner_300x250.zip** file for upload to Sizmek platform:
 
@@ -459,6 +448,10 @@ Contributors are welcome, please fork and send pull requests! If you have any id
 Original code licensed under [MIT](https://en.wikipedia.org/wiki/MIT_License) Open Source projects used within this project retain their original licenses.
 
 # Changelog
+
+### v1.5.0 (January 12, 2016) 
+
+* Update documentation
 
 ### v1.4.0 (November 30, 2015) 
 
