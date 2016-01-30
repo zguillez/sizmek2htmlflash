@@ -1,5 +1,7 @@
 # Sizmek2htmlflash
 
+[![Join the chat at https://gitter.im/zguillez/sizmek2htmlflash](https://badges.gitter.im/zguillez/sizmek2htmlflash.svg)](https://gitter.im/zguillez/sizmek2htmlflash?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+
 [![npm version](https://badge.fury.io/js/sizmek2htmlflash.svg)](https://badge.fury.io/js/sizmek2htmlflash)
 [![Build Status](http://img.shields.io/travis/zguillez/sizmek2htmlflash.svg)](https://github.com/zguillez/sizmek2htmlflash)
 [![Code Climate](http://img.shields.io/codeclimate/github/zguillez/sizmek2htmlflash.svg)](https://codeclimate.com/github/zguillez/sizmek2htmlflash)
