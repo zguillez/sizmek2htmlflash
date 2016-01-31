@@ -10,7 +10,7 @@
 [![Analytics](https://ga-beacon.appspot.com/UA-1125217-30/zguillez/sizmek2htmlflash?pixel)](https://github.com/igrigorik/ga-beacon)
 [![Join the chat at https://gitter.im/zguillez/sizmek2htmlflash](https://badges.gitter.im/zguillez/sizmek2htmlflash.svg)](https://gitter.im/zguillez/sizmek2htmlflash?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
-Npm module that execute Grunt task to implement Sizmek clicktag code into HTML banner made with Flash CC 2015
+Npm module that execute Grunt task to implement Sizmek clicktag code into HTML5 banner made with Flash CC 2015 IDE.
 
 # Getting Started
 
