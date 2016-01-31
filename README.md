@@ -1,7 +1,5 @@
 # Sizmek2htmlflash
 
-[![Join the chat at https://gitter.im/zguillez/sizmek2htmlflash](https://badges.gitter.im/zguillez/sizmek2htmlflash.svg)](https://gitter.im/zguillez/sizmek2htmlflash?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
-
 [![npm version](https://badge.fury.io/js/sizmek2htmlflash.svg)](https://badge.fury.io/js/sizmek2htmlflash)
 [![Build Status](http://img.shields.io/travis/zguillez/sizmek2htmlflash.svg)](https://github.com/zguillez/sizmek2htmlflash)
 [![Code Climate](http://img.shields.io/codeclimate/github/zguillez/sizmek2htmlflash.svg)](https://codeclimate.com/github/zguillez/sizmek2htmlflash)
@@ -10,6 +8,7 @@
 ![](https://reposs.herokuapp.com/?path=zguillez/sizmek2htmlflash)
 [![License](http://img.shields.io/:license-mit-blue.svg)](http://doge.mit-license.org)
 [![Analytics](https://ga-beacon.appspot.com/UA-1125217-30/zguillez/sizmek2htmlflash?pixel)](https://github.com/igrigorik/ga-beacon)
+[![Join the chat at https://gitter.im/zguillez/sizmek2htmlflash](https://badges.gitter.im/zguillez/sizmek2htmlflash.svg)](https://gitter.im/zguillez/sizmek2htmlflash?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
 Npm module that execute Grunt task to implement Sizmek clicktag code into HTML banner made with Flash CC 2015
 
