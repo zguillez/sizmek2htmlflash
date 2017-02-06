@@ -14,16 +14,16 @@
 		"sizmek2htmlflash": "bin/run.js"
 	},
 	"dependencies": {
-		"shelljs": "^0.5.3",
-		"grunt": "^0.4.5",
-		"grunt-contrib-compress": "^0.14.0",
-		"grunt-contrib-copy": "^0.8.2",
-		"grunt-mkdir": "^0.1.2",
+		"shelljs": "^0.7.6",
+		"grunt": "^1.0.1",
+		"grunt-contrib-compress": "^1.4.1",
+		"grunt-contrib-copy": "^1.0.0",
+		"grunt-mkdir": "^1.0.0",
 		"grunt-rename": "^0.1.4",
 		"grunt-text-replace": "^0.4.0",
 		"grunt-contrib-imagemin": "^1.0.0",
 		"grunt-pngmin": "^1.0.2",
-		"imagemin-mozjpeg": "^5.1.0",
+		"imagemin-mozjpeg": "^6.0.0",
 		"grunt-zip": "^0.17.1",
 		"grunt-curl": "^2.2.0"
 	}
