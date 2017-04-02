@@ -22,7 +22,7 @@
 		"grunt-rename": "^0.1.4",
 		"grunt-text-replace": "^0.4.0",
 		"grunt-contrib-imagemin": "^1.0.0",
-		"grunt-pngmin": "^1.0.2",
+		"grunt-pngmin": "1.2.0",
 		"imagemin-mozjpeg": "^6.0.0",
 		"grunt-zip": "^0.17.1",
 		"grunt-curl": "^2.2.0"
