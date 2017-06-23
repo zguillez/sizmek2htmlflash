@@ -21,7 +21,7 @@
 		"grunt-mkdir": "^1.0.0",
 		"grunt-rename": "^0.1.4",
 		"grunt-text-replace": "^0.4.0",
-		"grunt-contrib-imagemin": "^1.0.0",
+		"grunt-contrib-imagemin": "^2.0.1",
 		"grunt-pngmin": "^1.0.2",
 		"imagemin-mozjpeg": "^6.0.0",
 		"grunt-zip": "^0.17.1",
