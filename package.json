@@ -24,7 +24,7 @@
 		"grunt-contrib-imagemin": "^1.0.0",
 		"grunt-pngmin": "^1.0.2",
 		"imagemin-mozjpeg": "^6.0.0",
-		"grunt-zip": "^0.17.1",
+		"grunt-zip": "^0.18.0",
 		"grunt-curl": "^2.2.0"
 	}
 }
